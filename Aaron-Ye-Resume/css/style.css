@@ -59,19 +59,16 @@ header{
 }
 /*END of Hero Section*/
 
+
 /*About Me Section*/
-.about.area{
-  margin-top: 15px;
-  padding-top: 5%;
-}
-.about-img{
-  position: relative;
-}
-.about-img img{
-  width: 75%;
-}
-.about-text{
-  padding-top: 20%;
+.avatar{
+  width: 20%;
+  clip-path: circle();
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,70%);
+  border: 5px solid white;
 }
 
 /*END of About Me Section*/
@@ -91,7 +88,7 @@ body{
 #title{
   text-transform: uppercase;
   font-size: 1.5em;
-  color: #33485e;
+  color: #fad44f;
   font-weight: bold;
   text-align: center;
   margin-top: 20px;
@@ -103,8 +100,8 @@ body{
 .sectionheader { font-size: 1.5em;
   font-weight:400;
   text-transform: uppercase;
-  background-color: #33485e;
-  color: #ffffff;
+  background-color: white;
+  color: #123f77;
   margin-top:20px;
   margin-bottom: 10px;
   margin-left: 0px;
@@ -113,7 +110,11 @@ body{
   min-width: 300px;
 }
 /* styles for job titles*/
-.jobtitle{font-size: 1.5em; font-weight: 600;}
+.jobtitle{
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #fad44f;
+}
 /* styles for job org*/
 .organization{weightfont-size: 1.5em;
   font-weight:400;
@@ -131,13 +132,21 @@ body{
 }
 /* styles for li elements*/
 .menu li{
-  font-size: 1em;
-  display: inline;
+  list-style: none;
+  margin: 10px 30px;
+  display: inline-block;
+  font-size: 20px;
+  padding: 20px 20px;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  transition: .5s;
 }
 
 #container{
   width: 100%;
   max-width: 1200px;
+  padding-top: 150px;
   margin: 0 auto;
 }
 .description{
