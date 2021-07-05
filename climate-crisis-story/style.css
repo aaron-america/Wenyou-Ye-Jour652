@@ -84,15 +84,20 @@ figcaption{
   font-style:italic;
 }
 
-}
 #chapterheadline {
   font-size:2em;
-  font-weight: 500;
+  font-weight: 600;
   font-family: 'Montserrat',sans-serif;
   text-align: left;
-  font-style: oblique;
-  padding-top: 50px;
-  color: #de361e !important;
+  padding-top:2px;
+  color: #e0882a ;
+  padding-top: 20px;
+  border-bottom: : 1px;
+  border-style: solid;
+  border-left: 0;
+  border-top: 0;
+  border-color: 0;
+  border-right: 0;
 }
 
 
