@@ -9,6 +9,10 @@
   <meta name="author" content="Aaron Ye">
 
   <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
@@ -36,16 +40,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-lg-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Pervasive hazards<span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#prevhazard">Pervasive hazards<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Reality check</a>
+              <a class="nav-link" href="#realcheck">Reality check</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Jobs at risk</a>
+              <a class="nav-link" href="#jobrisk">Jobs at risk</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Failure to protect</a>
+              <a class="nav-link" href="#failprotect">Failure to protect</a>
             </li>
           </ul>
         </div>
@@ -86,11 +90,57 @@
 
     <p>Sales at Walmart, the world’s largest retailer, soared as Americans hunkered down during the pandemic. The essential workers serving them paid the price.</p>
 
-    <section id="block_content">
-        <div class="col- container">
-            <blockquote class="blockstyle">Across 10 states with available data, multiple COVID-19 illnesses were recorded in at least <mark id="walmartnumber">151</mark>Walmart facilities. That’s one quarter of the company’s stores and distribution centers in those states.</blockquote>
+    <div class="myCarousel" id="datagraph">
+    <div id="carouselCaptions" class="carousel slide" data-ride="carousel" align="center">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselCaptions" data-slide-to="2"></li>
+            <li data-target="#carouselCaptions" data-slide-to="3"></li>
+            <li data-target="#carouselCaptions" data-slide-to="4"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-interval="2000">
+                <img src="kunz.jpeg" class="d-block" alt="">
+                <div class="carousel-caption">
+                    <h5>Sandy and Gus Kunz, who died within two days of each other, were best friends for 25 years, says Paula Spellman, Sandy’s sister. Sandy worked at an Aurora, Colorado, Walmart store where 18 workers became sick. She and another worker died. (Photo courtesy of Paula Spellman)</h5>
+                </div>
+            </div>
+            <div class="carousel-item" data-interval="2000">
+                <img src="grace.jpeg" class="d-block" alt="">
+                <div class="carousel-caption">
+                    <h5>Terry Croce, a Stop & Shop employee for 29 years in Rhode Island, says she faced anxiety daily during the pandemic, including confrontations with angry customers. (Photo courtesy of Terry Croce)</h5>
+                </div>
+            </div>
+            <div class="carousel-item" data-interval="2000">
+                <img src="fuller.jpeg" class="d-block" alt="">
+                <div class="carousel-caption">
+                    <h5>Mishelle L. Fuller says she was let go from her job at a Rhode Island Walmart after contracting COVID-19. (Photo courtesy of Mishelle L. Fuller)</h5>
+                </div>
+            </div>
+            <div class="carousel-item" data-interval="2000">
+                <img src="ruzich.jpeg" class="d-block" alt="">
+                <div class="carousel-caption">
+                    <h5>Kellie Ruzich, a Walmart associate in Hermantown, Minnesota, says employees at her store are fired if they fail to wear masks consistently. (Photo courtesy of Kellie Ruzich)</h5>
+                </div>
+            </div>
+            <div class="carousel-item" data-interval="2000">
+                <img src="dudley.jpeg" class="d-block" alt="">
+                <div class="carousel-caption">
+                    <h5>Vermont grandmother Lorinda Dudley, who earned $13 per hour as a Walmart cashier, is suing the corporate giant claiming they fired her when she asked for COVID-19 personal protective equipment at work. (Photo courtesy of Lorinda Dudley)</h5>
+                </div>
+            </div>
         </div>
-    </section>
+        <a class="carousel-control-prev" href="#carouselCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
 
     <p>The Walmart where Kunz worked was one of at least 151 Walmart facilities in 10 states with available data where multiple COVID-19 illnesses were recorded, a reporting consortium led by the Howard Center for Investigative Journalism at the University of Maryland found. That’s one quarter of the company’s stores and distribution centers in those states.</p>
 
@@ -127,6 +177,12 @@
 
     <p>Other workers echoed Holman’s claims. Fernanda Alcantara, a Walmart associate in Rogers, Arkansas, said Walmart “did their best that if anyone in the store tested positive, they would keep it to themselves. … I think there were a lot more (cases) that they did not tell their employees.”</p>
 
+    <section id="block_content">
+        <div class="col- container">
+            <blockquote class="blockstyle">Across 10 states with available data, multiple COVID-19 illnesses were recorded in at least <mark id="walmartnumber">151</mark>Walmart facilities. That’s one quarter of the company’s stores and distribution centers in those states.</blockquote>
+        </div>
+    </section>
+
     <p>Store managers directed reporters to corporate officials. Walmart spokesperson Scott Pope said “we communicate with associates in stores where there has been a confirmed case.”</p>
 
     <p>“Any time you operate more than 5,000 facilities across the country, there are going to be variances in how those facilities are managed,” Pope said.</p>
@@ -149,7 +205,7 @@
     <iframe title="The Source of COVID-19 Information" aria-label="chart" id="datawrapper-chart-qWsBi" src="https://datawrapper.dwcdn.net/qWsBi/1/" scrolling="no" frameborder="0" style="border: none;" width="1059" height="778" align="center"></iframe>
     </div>
 
-    <h2>Pervasive hazards</h2>
+    <h2 id="prevhazard">Pervasive hazards</h2>
 
     <p>A study published in Occupational & Environmental Medicine, an international, peer-reviewed journal, found that infection rates were significantly higher at a grocery retail store than in the surrounding community.</p>
 
@@ -204,13 +260,8 @@
 
 <!-- SlideShow -->
 <!-- Slideshow container -->
-<!-- Place somewhere in the <body> of your page -->
 
-
-<!-- SlideShow END -->
-
-
-    <h2>Reality check</h2>
+    <h2 id="realcheck">Reality check</h2>
 
     <p>Staheli said Walmart instituted a range of safety policies, including requiring facial coverings for associates and customers, limiting store hours and capacity, deep cleanings, temperature checks and health screenings of associates, installing plastic guards and implementing social distancing in all of its facilities. The company is not lifting the mask requirement at this time despite the fact that some states have ended mask mandates.</p>
 
@@ -233,6 +284,8 @@
     <p>“Our safety is being disregarded in order to satisfy the customer,” Alcantara said.</p>
 
     <p>Pope, the Walmart spokesperson, said the first step is flagging the customer and offering them a mask, then alerting a member of management if they refuse. His colleague Staheli would not comment on how Walmart management is trained to respond beyond “deescalation training.”</p>
+
+    <h2 id="jobrisk">Job at risk</h2>
 
 
     <p>Some workers said they face retaliation if they complain about safety conditions to employers.</p>
@@ -287,7 +340,7 @@
 
     <p>In the meantime, state OSHA plans in California, Oregon, Michigan and Virginia enacted emergency temporary standards on their own. Virginia’s standard became permanent, and timelines vary in the other states.</p>
 
-    <h2>Failure to protect</h2>
+    <h2 id="failprotect">Failure to protect</h2>
     <figure align="center" class="container-fluid" id="datagraph">
       <img src="lee.jpeg" alt="Trulli" style="width:80%">
       <figcaption>Chinese immigrant Yok Yen Lee holds her grandchild in this family photo. Lee, 69, died in May 2020 from COVID-19, which her family claims she contracted while working as a greeter at a Quincy, Massachusetts, Walmart. (Photo courtesy of Lani Eklund)</figcaption>

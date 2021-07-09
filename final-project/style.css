@@ -173,6 +173,8 @@ blockquote.blockstyle.border-color-yellow {
 
 
 h2{
+  padding-top: 20px;
+  font-size: 3em;
   color: #003087;
 }
 
@@ -229,4 +231,31 @@ footer {
   padding-top: 20px;
   display: block;
   text-align: center;
+}
+
+.carousel .carousel-item img {
+    height: 100px;
+    object-fit: cover;
+}
+
+@media (min-width: 768px) {
+.carousel .carousel-item img {
+    height: 500px;
+    object-fit: cover;
+}
+}
+.carousel-caption {
+    padding: 0 60px 0 60px;
+    font-style: italic;
+    text-align: left;
+    font-weight: 30;
+    color: black;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  filter: invert(1);
 }
